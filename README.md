@@ -1,6 +1,6 @@
 # vue-music
 
-> A Vue.js project
+> 仿QQ音乐 WebApp
 
 ## Build Setup
 
