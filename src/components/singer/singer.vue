@@ -1,7 +1,9 @@
 <template>
   <div class="singer">
     <list-view @select="selectSinger" :data="singers"></list-view>
-    <router-view></router-view>
+    <transition name="slide">
+      <router-view></router-view>
+     </transition>
   </div>
 </template>
 
@@ -104,4 +106,9 @@ export default {
   position: fixed
   top: 88px
   bottom: 20px
+.slide-enter-active, .slide-leave-active
+  transition: all 0.3s
+
+.slide-enter, .slide-leave-to
+  transform: translate3d(100%, 0, 0)
 </style>
